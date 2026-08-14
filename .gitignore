@@ -11,3 +11,6 @@ build/
 # never as a side effect of a wildcard add.
 runs/
 prices.json
+
+# Local handoff notes, not part of the repository record.
+.handoff/
