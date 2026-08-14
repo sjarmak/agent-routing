@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Run roots are append-only evidence. Commit them deliberately, per run,
+# never as a side effect of a wildcard add.
+runs/
+prices.json

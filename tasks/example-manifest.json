@@ -1,0 +1,28 @@
+{
+  "manifest_version": "routing-econ-tasks-v1",
+  "name": "example",
+  "note": "Shape reference only. Three placeholder tasks so the loader can be exercised without a real suite. Replace with a task set you are licensed to use before recording any trial.",
+  "tasks": [
+    {
+      "task_id": "example-001",
+      "prompt": "Locate the function that parses the configuration file and add validation for the timeout field.",
+      "verifier": "pytest tests/test_config.py::test_timeout_validation",
+      "work_type": "feature",
+      "complexity": "small"
+    },
+    {
+      "task_id": "example-002",
+      "prompt": "Trace why the retry loop exits early when the upstream returns 429 and fix it.",
+      "verifier": "pytest tests/test_retry.py",
+      "work_type": "debug",
+      "complexity": "medium"
+    },
+    {
+      "task_id": "example-003",
+      "prompt": "Rename the internal client interface across the package and update every call site.",
+      "verifier": "pytest tests/ && ruff check .",
+      "work_type": "refactor",
+      "complexity": "large"
+    }
+  ]
+}
