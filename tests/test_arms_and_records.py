@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from routing_econ import (
+from agent_routing import (
     ARMS,
     INVERTED,
     ROUTED,
@@ -108,7 +108,7 @@ def test_writer_appends_and_round_trips(tmp_path):
     trials = read_trials(writer.path)
     assert [trial["task_id"] for trial in trials] == ["t1", "t2"]
     assert trials[0]["attempts"][0]["calls"][0]["tier"] == "large"
-    assert trials[0]["schema_version"] == "routing-econ-trial-v1"
+    assert trials[0]["schema_version"] == "agent-routing-trial-v1"
 
 
 def test_writer_refuses_to_reuse_another_runs_root(tmp_path):

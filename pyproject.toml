@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "routing-econ"
+name = "agent-routing"
 version = "0.0.1"
 description = "Measure whether routing agent steps across model tiers pays for itself"
 readme = "README.md"
@@ -16,7 +16,7 @@ dependencies = []
 dev = ["pytest>=8.0", "ruff>=0.6"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/routing_econ"]
+packages = ["src/agent_routing"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

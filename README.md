@@ -1,4 +1,7 @@
-# Agent routing economics
+# agent-routing
+
+An experiment in whether an agent should use its most capable model for every
+step.
 
 **Status: apparatus only. No results yet.** The harness, arms, and metrics are
 built and tested. Nothing has been run against a live endpoint, so this

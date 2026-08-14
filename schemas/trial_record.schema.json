@@ -16,7 +16,7 @@
   ],
   "additionalProperties": false,
   "properties": {
-    "schema_version": { "const": "routing-econ-trial-v1" },
+    "schema_version": { "const": "agent-routing-trial-v1" },
     "run_id": { "type": "string", "minLength": 1 },
     "arm": { "enum": ["all-large", "all-small", "routed", "inverted"] },
     "task_id": { "type": "string", "minLength": 1 },

@@ -1,6 +1,6 @@
 import pytest
 
-from routing_econ import (
+from agent_routing import (
     MissingPriceError,
     ModelPrice,
     cache_reuse_rate,

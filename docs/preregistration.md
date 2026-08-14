@@ -14,7 +14,7 @@ without lowering task success?
 
 ## Arms
 
-Four, defined in `src/routing_econ/arms.py`: `all-large`, `all-small`,
+Four, defined in `src/agent_routing/arms.py`: `all-large`, `all-small`,
 `routed`, `inverted`. Each is a total function from step kind to tier, so no
 arm can differ from another by an unrouted step.
 

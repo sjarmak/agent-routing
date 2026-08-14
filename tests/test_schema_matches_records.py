@@ -7,7 +7,7 @@ against what the writer actually emits, which is the drift that matters.
 import json
 from pathlib import Path
 
-from routing_econ import Attempt, InferenceCall, StepKind, Tier, TrialRecord
+from agent_routing import Attempt, InferenceCall, StepKind, Tier, TrialRecord
 
 SCHEMA_PATH = Path(__file__).resolve().parents[1] / "schemas" / "trial_record.schema.json"
 
@@ -66,7 +66,7 @@ def test_call_fields_match_the_schema_exactly():
 
 
 def test_schema_arm_enum_covers_every_defined_arm():
-    from routing_econ import ARMS
+    from agent_routing import ARMS
 
     assert set(schema()["properties"]["arm"]["enum"]) == set(ARMS)
 

@@ -1,5 +1,5 @@
 {
-  "manifest_version": "routing-econ-tasks-v1",
+  "manifest_version": "agent-routing-tasks-v1",
   "name": "example",
   "note": "Shape reference only. Three placeholder tasks so the loader can be exercised without a real suite. Replace with a task set you are licensed to use before recording any trial.",
   "tasks": [

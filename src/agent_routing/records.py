@@ -14,7 +14,7 @@ from pathlib import Path
 
 from .arms import StepKind, Tier
 
-SCHEMA_VERSION = "routing-econ-trial-v1"
+SCHEMA_VERSION = "agent-routing-trial-v1"
 
 
 @dataclass(frozen=True)
